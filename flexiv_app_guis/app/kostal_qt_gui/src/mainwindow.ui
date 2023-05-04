@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+    color: rgb(40, 87, 128);
+    background:none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(235, 242, 248);
+    font-family: &quot;Helvetica&quot;;
+    font-size: 10pt;
+}
+#MidContainer{
+}
+QFrame, QLabel {
+}
+/* Set settings for checkbox*/
+QCheckBox{
+    border: 1px solid rgb(40, 87, 128);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 150px;
+    padding-right: 20px;
+}
+QCheckBox:indicator{
+    width: 32px;
+    height: 32px;
+}
+QCheckBox:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QCheckBox:focus {
+}
+QCheckBox:indicator::unchecked{
+    image: url(:/icons/icons/square.svg);
+}
+QCheckBox:indicator::checked{
+    background: rgb(202, 222, 237);
+    image: url(:/icons/icons/check-square.svg);
+}
+/* Set settings for line edit inputs*/
+QLineEdit{
+    border: 1px solid rgb(40, 87, 128);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(40, 87, 128);
+    font: bold;
+    qproperty-alignment: AlignCenter;
+}
+QLineEdit:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QLineEdit:focus {
+    border: 2px solid rgb(85,170,255);
+}
+/* Set settings for double spinbox inputs*/
+QSpinBox, QDoubleSpinBox{
+    margin-left: 50px;  /* make room for the arrows */
+    margin-right: 50px;  /* make room for the arrows */
+    border: 1px solid rgb(40, 87, 128);
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 87, 128);
+    font: bold;
+}
+QSpinBox::hover, QDoubleSpinBox::hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::focus, QDoubleSpinBox::focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button, QDoubleSpinBox::down-button{
+    subcontrol-origin: margin;
+    subcontrol-position: center left;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(46, 103, 156);
+    background-color: rgb(202, 222, 237);
+    height: 54px;
+    width: 54px;
+}
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow{
+    image: url(:/icons/icons/arrow-down-circle.svg);;
+    height: 35px;
+    width: 35px;
+}
+QSpinBox::down-button:hover, QDoubleSpinBox::down-button:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button:focus, QDoubleSpinBox::down-button:focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button:pressed, QDoubleSpinBox::down-button:pressed{
+    background-color: rgb(52, 113, 173);
+}
+QSpinBox::up-button, QDoubleSpinBox::up-button{
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(46, 103, 156);
+    background-color: rgb(202, 222, 237);
+    height: 54px;
+    width: 54px;
+}
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow{
+    image: url(:/icons/icons/arrow-up-circle.svg);
+    height: 35px;
+    width: 35px;
+}
+QSpinBox::up-button:hover, QDoubleSpinBox::up-button:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::up-button:focus, QDoubleSpinBox::up-button:focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::up-button:pressed, QDoubleSpinBox::up-button:pressed{
+    background-color: rgb(52, 113, 173);
+}
+/* Set settings for push buttons*/
+QPushButton{
+    border: 1px solid;
+    border-color: rgb(46, 103, 156);
+    border-left: 1px solid;
+    border-radius: 10px;
+    padding-right: 20px; 
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 1px;
+    background-color: rgb(202, 222, 237);
+    font: bold;
+}
+QPushButton:hover {
+    border: 2px solid rgb(85,170,255);
+}
+QPushButton:focus {
+    border: 2px solid rgb(85,170,255);
+}
+QPushButton:pressed{
+    background-color: rgb(52, 113, 173);
+}
+QPushButton:disabled {
+    color: grey;
+    border-color: grey;
+    background-color: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+    color: rgb(40, 87, 128);
+    background:none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(235, 242, 248);
+    font-family: &quot;Helvetica&quot;;
+    font-size: 10pt;
+}
+#MidContainer{
+}
+QFrame, QLabel {
+}
+/* Set settings for checkbox*/
+QCheckBox{
+    border: 1px solid rgb(40, 87, 128);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 150px;
+    padding-right: 20px;
+}
+QCheckBox:indicator{
+    width: 32px;
+    height: 32px;
+}
+QCheckBox:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QCheckBox:focus {
+}
+QCheckBox:indicator::unchecked{
+    image: url(:/icons/icons/square.svg);
+}
+QCheckBox:indicator::checked{
+    background: rgb(202, 222, 237);
+    image: url(:/icons/icons/check-square.svg);
+}
+/* Set settings for line edit inputs*/
+QLineEdit{
+    border: 1px solid rgb(40, 87, 128);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(40, 87, 128);
+    font: bold;
+    qproperty-alignment: AlignCenter;
+}
+QLineEdit:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QLineEdit:focus {
+    border: 2px solid rgb(85,170,255);
+}
+/* Set settings for double spinbox inputs*/
+QSpinBox, QDoubleSpinBox{
+    margin-left: 50px;  /* make room for the arrows */
+    margin-right: 50px;  /* make room for the arrows */
+    border: 1px solid rgb(40, 87, 128);
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 87, 128);
+    font: bold;
+}
+QSpinBox::hover, QDoubleSpinBox::hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::focus, QDoubleSpinBox::focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button, QDoubleSpinBox::down-button{
+    subcontrol-origin: margin;
+    subcontrol-position: center left;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(46, 103, 156);
+    background-color: rgb(202, 222, 237);
+    height: 54px;
+    width: 54px;
+}
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow{
+    image: url(:/icons/icons/arrow-down-circle.svg);;
+    height: 35px;
+    width: 35px;
+}
+QSpinBox::down-button:hover, QDoubleSpinBox::down-button:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button:focus, QDoubleSpinBox::down-button:focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::down-button:pressed, QDoubleSpinBox::down-button:pressed{
+    background-color: rgb(52, 113, 173);
+}
+QSpinBox::up-button, QDoubleSpinBox::up-button{
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(46, 103, 156);
+    background-color: rgb(202, 222, 237);
+    height: 54px;
+    width: 54px;
+}
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow{
+    image: url(:/icons/icons/arrow-up-circle.svg);
+    height: 35px;
+    width: 35px;
+}
+QSpinBox::up-button:hover, QDoubleSpinBox::up-button:hover{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::up-button:focus, QDoubleSpinBox::up-button:focus{
+    border: 2px solid rgb(85,170,255);
+}
+QSpinBox::up-button:pressed, QDoubleSpinBox::up-button:pressed{
+    background-color: rgb(52, 113, 173);
+}
+/* Set settings for push buttons*/
+QPushButton{
+    border: 1px solid;
+    border-color: rgb(46, 103, 156);
+    border-left: 1px solid;
+    border-radius: 10px;
+    padding-right: 20px; 
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 1px;
+    background-color: rgb(202, 222, 237);
+    font: bold;
+}
+QPushButton:hover {
+    border: 2px solid rgb(85,170,255);
+}
+QPushButton:focus {
+    border: 2px solid rgb(85,170,255);
+}
+QPushButton:pressed{
+    background-color: rgb(52, 113, 173);
+}
+QPushButton:disabled {
+    color: grey;
+    border-color: grey;
+    background-color: none;
+}</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>455</width>
+      <height>184</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_start">
+         <property name="statusTip">
+          <string>start the robot</string>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_stop">
+         <property name="statusTip">
+          <string>stop the robot</string>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_exit">
+         <property name="text">
+          <string>Exit</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>System Status</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_system_status">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Task Name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_task_name">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Task Type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_task_type">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>SPI-CPOL</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_spi_cpol">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>SPI-CPHA</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_spi_cpha">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>SPI-LSB</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="label_spi_lsb">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>SPI-SELP</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_spi_selp">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

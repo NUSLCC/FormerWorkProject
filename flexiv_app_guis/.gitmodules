@@ -1,0 +1,9 @@
+[submodule "thirdparty/flexiv_rdk"]
+	path = thirdparty/flexiv_rdk
+	url = https://github.com/flexivrobotics/flexiv_rdk.git
+[submodule "cmake/tools"]
+	path = cmake/tools
+	url = https://bitbucket.org/FlexivTeam/flexiv_cmake_tools.git
+[submodule "thirdparty/flexiv_middleware2"]
+	path = thirdparty/flexiv_middleware2
+	url = https://lcc_flexiv@bitbucket.org/FlexivTeam/flexiv_middleware2.git

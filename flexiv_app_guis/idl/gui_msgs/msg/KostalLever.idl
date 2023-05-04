@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from test_msgs/msg/KostalLever.msg
+// generated code does not contain a copyright notice
+
+module test_msgs
+{
+    module msg
+    {
+        struct KostalLever
+        {
+            uint8 status;
+
+            double tcp_pose[7]; // Measured TCP pose in base frame
+
+            double flange_pose[7]; // Measured flange pose in base frame
+
+            double
+                raw_data[6]; // Measured raw force sensor data in flange frame
+
+            string node_name; // Current node name
+
+            string cpol; // SPI config
+
+            string cpha; // SPI config
+
+            string lsb; // SPI config
+
+            string selp; // SPI config
+
+            string token; // Testman shakehand token "kostal"
+
+            string task_type; // Testman task type ex. NORMAL BIAS DUMMY
+
+            string
+                task_name; // Testman task name ex. Kostal-V216-MainPlan-NORMAL
+
+            string query_status; // Whether Testman query system status
+
+            string terminate_status; // Whether Testman terminate system
+        };
+    };
+};
